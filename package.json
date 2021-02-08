@@ -1,0 +1,26 @@
+{
+  "name": "easybank",
+  "version": "1.0.0",
+  "description": "project for practising css/scss & responsive layout",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "keywords": [],
+  "author": "NemanjaP83",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.32.5"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NemanjaP83/Easybank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NemanjaP83/Easybank/issues"
+  },
+  "homepage": "https://github.com/NemanjaP83/Easybank#readme"
+}

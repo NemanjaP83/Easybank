@@ -1,0 +1,95 @@
+.features {
+    min-height: 50rem;
+    background-color: $Light-Grayish-Blue;
+    padding: 10rem 0;
+
+    @media screen and(max-width: 375px){
+        padding: 4rem 0;  
+    }
+
+    &__text {
+        width: 60%;
+
+        @media screen and(max-width: 1024px){
+            text-align: center;
+            width: 100%;
+            padding: 0 4rem;
+        }
+
+        > h2 {
+            font-size: 3.4rem;
+            font-weight: 300;
+            color: $Dark-Blue;
+            margin-bottom: 3rem;
+
+            @media screen and(max-width: 375px){
+                font-size: 2.2rem;    
+            }
+        }
+
+        > p {
+            color: $Grayish-Blue;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            margin-bottom: 8rem;
+
+            @media screen and(max-width: 375px){
+                font-size: 1.4rem;    
+            }
+        }
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 3rem;
+
+        @media screen and(max-width: 1024px) {
+           text-align: center;
+        }
+
+        @media screen and(max-width: 600px) {
+            justify-items: center;
+         }
+
+        .item {
+            min-height: 200px;
+
+            @media screen and(max-width: 1024px) {
+                padding: 0 2rem;
+             }
+
+             @media screen and(max-width: 375px) {
+                width: 100%;
+             }
+            
+            img {
+                margin-bottom: 3rem;
+                width: 7rem;
+                height: 7rem;
+            }
+
+            h3 {
+                margin-bottom: 3rem;
+                color: $Dark-Blue;
+                font-weight: 300;
+                font-size: 2.4rem;
+
+                @media screen and(max-width: 375px){
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.5;
+                color: $Grayish-Blue;
+
+                @media screen and(max-width: 375px){
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+}

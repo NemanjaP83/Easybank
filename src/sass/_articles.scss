@@ -1,0 +1,113 @@
+.articles {
+    background-color: $Very-Light-Gray;
+    min-height: 50rem;
+    padding: 8rem 0;
+
+    @media screen and(max-width: 600px) {
+        padding: 4rem;
+    }
+
+    &__content {
+
+        @media screen and(max-width: 600px) {
+            text-align: center;
+        }
+
+        &__title {
+            color: $Dark-Blue;
+            font-size: 3rem;
+            font-weight: 300;
+
+            @media screen and(max-width: 600px) {
+                font-size: 2.6rem;
+            }
+        }
+    }
+
+    &__box {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media screen and(max-width: 600px) {
+            justify-content: center;
+        }
+        
+    }
+
+    &__item {
+        margin-bottom: 3rem;
+        margin-right: 2.5rem;
+        width: 240px;
+        min-height: 300px;
+        background-color: $White;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 12px 20px rgba(0, 0, 0 , .25);
+        }
+
+        @media screen and(max-width: 600px) {
+            margin-right: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        .image-1 {
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/image-currency.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-2 {
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/image-restaurant.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-3 {
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/image-plane.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-4 {
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/image-confetti.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__text {
+        padding: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        color: $Grayish-Blue;
+
+        h4 {
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            color: $Dark-Blue;
+            padding-bottom: 1rem;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $Lime-Green;
+                cursor: pointer;
+            }
+        }
+    }
+}
