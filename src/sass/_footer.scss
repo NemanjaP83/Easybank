@@ -1,5 +1,5 @@
 .footer {
-    height: 16rem;
+    min-height: 16rem;
     background-color: $Dark-Blue;
     color: $White;
     font-size: 1.4rem;
@@ -8,16 +8,28 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1000px) {
+        padding: 3rem;
+    }
+
     &__container {
-        height: 9rem;
+        min-height: 9rem;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__logo {
         height: 2rem;
         width: 14rem;
         
+        @media (max-width: 800px) {
+            height: 3rem;
+        }
     }
 
     &__social-icons {
@@ -44,12 +56,28 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media (max-width: 800px) {
+            margin-right: 0;
+            align-items: center;
+        }
+
         > a {
             transition: color .3s ease-in-out;
 
             &:hover {
                 color: $Lime-Green;
             }
+
+            @media (max-width: 800px) {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    &__links-1 {
+
+        @media (max-width: 800px) {
+            margin-bottom: 2.5rem;
         }
     }
 
@@ -64,6 +92,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media (max-width: 800px) {
+            width: auto;
+            align-items: center;
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
         
         p {
             color: $Grayish-Blue;
@@ -72,6 +107,10 @@
 
     &__btn {
         transition: all .3s ease-in-out;
+
+        @media (max-width: 800px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__btn:hover {
